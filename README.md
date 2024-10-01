@@ -5,7 +5,7 @@ This is a simple CRUD application built with the Django framework to manage todo
 ## Features
 
 - **Create**: Users can add new todo items.
-- **Read**: List all existing todo items with their details.
+- **Read**: List all existing todo items and retreive their details.
 - **Update**: Users can edit existing todo items.
 - **Delete**: Users can remove todo items that are no longer needed.
 
