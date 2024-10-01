@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Todo</title>
+</head>
+<body>
+<p> Name: {{ todo.name }} </p>
+<p> Status: {{ todo.get_status_display }} </p>
+<p> Description: {{ todo.description }} </p>
+<p><a href="{% url 'todo:update_todo' todo.id %}">Update</a>,
+   <a href="{% url 'todo:delete_todo' todo.id %}">Delete</a>
+</p>
+<p><a href="{% url 'todo:todo_list' %}">Return List</a>,
+   <a href="{% url 'todo:create_todo'%}">New Todo</a>
+</p>
+</body>
+</html>

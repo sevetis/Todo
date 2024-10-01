@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Todo List</title>
+</head>
+
+<body>
+<h3>Todo List</h3>
+<p><a href="{% url 'todo:create_todo' %}">New Todo</a></p>
+<br>
+{% for todo in todos %}
+    <p>{{ forloop.counter }}. <a href="{% url 'todo:retreive_todo' todo.id %}">{{todo.name}}</a> [{{ todo.get_status_display }}]
+        (<a href="{% url 'todo:update_todo' todo.id %}">update</a> | 
+         <a href="{% url 'todo:delete_todo' todo.id %}">delete</a>)
+    </p>
+{% endfor %}
+</body>
+
+</html>
