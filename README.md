@@ -2,6 +2,9 @@
 
 This is a simple CRUD application built with the Django framework to manage todo items.
 
+## Screenshot
+![Todo List](./assets/images/screenshot_todo_list.png)
+
 ## Features
 
 - **Create**: Users can add new todo items.
